@@ -1,0 +1,46 @@
+ <!-- Modal Opiniones-->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Dejanos tu opinion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <h2>Formulario de Opiniones</h2>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Temporada</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Busca un campo..</option>
+                      <option value="1">Temporada 1</option>
+                      <option value="2">Temporada 2</option>
+                      <option value="3">Temporada 3</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Nick</label>
+                    <input type="text" class="form-control" id="" placeholder="Nick">
+                  </div>     
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Episodio</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Busca un campo..</option>
+                      <option value="1">Episodio 1</option>
+                      <option value="2">Episodio 2</option>
+                      <option value="3">Episodio 3</option>
+                    </select>
+                  </div> 
+                  <div class="input-group">
+                    <span class="input-group-text">Opionion</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+ <!--fin del modal-->
+ 
