@@ -104,9 +104,9 @@
           <p>Diseños elegantes y contemporaneos</p>
           <hr />
           <div class="ewk_cont_banner_link">
-            <a class="ewk_banner_link" href="">Proyectos</a>
-            <a class="ewk_banner_link_1" href="">Licitaciones</a>
-            <a class="ewk_banner_link_2" href="">Cotización</a>
+            <a class="ewk_banner_link" href="v_usuarios.html">Usuarios</a>
+            <a class="ewk_banner_link_1" href="v_opiniones.html">Opiniones</a>
+            <a class="ewk_banner_link_2" href="#">Cotización</a>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
                     <div class="row">
                       <div class="col-4">
                         <div class="card">
-                          <div class="card-header">Mochilas</div>
+                          <div class="card-header">Opiniones</div>
                           <div class="card-body">
                             <form action=""id="form" method="post">
                               <div class="mb-3">
@@ -126,17 +126,6 @@
                                 <input type="text"
                                   class="form-control" name="buscar" id="buscar" aria-describedby="helpId" placeholder="Filtrar...">
                                </div>
-                                <!-- <div class="mb-3">
-                                  <label for="id" class="form-label">ID</label>
-                                  <input
-                                    type="id"
-                                    class="form-control"
-                                    name="id"
-                                    id="id"
-                                    aria-describedby="helpId"
-                                    placeholder="id"
-                                  />
-                                </div> -->
                                 <div class="mb-3">
                                   <label for="nick" class="form-label">nick</label>
                                   <input type="text"
@@ -164,16 +153,17 @@
                         </div>
                       </div>
                       <div class="col-8">
-                        <table class="table table-bordered" id="user_table">
+                        <table class="table table-bordered">
                           <thead>
                             <tr>
                               <th>ID</th>
                               <th>nick</th>
                               <th>Nombre</th>
                               <th>correo</th>
-                              <td></td>
+                              <td>Seleccionar | Borrar </td>
                             </tr>
                           </thead>
+                          <tbody id="usuarios"></tbody>
                         </table>
                       </div>
                     </div>
@@ -181,7 +171,6 @@
             </div>
         </dvi>
     </section>
-
     <script src="ext/bootstrap/js/bootstrap.min.js"></script>
     <script src="ext/aos.js"></script>
     <script src="js/index.js"></script>

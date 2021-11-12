@@ -9,23 +9,44 @@ $(document).ready(function () {
       contentType: "application/json;charset='utf8'",
       data: {},
       complete: function (datos) {
-        console.log(datos.responseJSON);
-        $("#usuarios").empty();
-        $.each(datos.responseJSON, function (i, v) {
-          $("#usuarios").append(
-            `<tr>
-                        <td>${v.id_usuario}</td>
-                        <td>${v.nick}</td>
-                        <td>${v.nombre}</td>
-                        <td>${v.correo}</td>
-                        <td> <a class='seleccionar' data-id='${v.id_usuario}'>seleccionar </a> - - <a class='delete' data-id='${v.id_usuario}' >Borrar</a></td>
-                    </tr>`
-          );
-        });
+        table.clear().draw();
+        table.row.add(datos.responseJSON);
+        table.columns.adjust().draw();
       },
       error: function (err) {},
     });
   }
+  var table = $('#user_table').DataTable({
+    dom:'Bfrtip',
+    buttons:[
+      {
+        extend:'excel',
+        exportOptions:{
+          columns:[0,1,2,3]
+        }
+      },
+      {
+        extend:'pdf',
+        exportOptions:{
+          columns:[0,1,2,3]
+        }
+      }
+    ],
+    'columns':[
+    {data: 'id_usuario'},
+    {data: 'nick'},
+    {data: 'nombre'},
+    {data: 'correo'},
+    {
+      data: 'id_usuario',
+      orderable:false,
+      render: function (data) {
+        return `<a class='update btn-warning' data-id='${data}'>modificar </a> -- <a class='delete btn btn-danger' data-id='${data}'>borrar</a> </td>`;
+        }
+    }
+    ],
+    bFilter:true,
+  });  
   
  
   $(document).on("click", ".delete", function () {
