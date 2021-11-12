@@ -116,17 +116,12 @@
             <div class="row ewk_cont_sec_1">
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-5">
                         <div class="card">
                           <div class="card-header">Mochilas</div>
                           <div class="card-body">
-                            <form action=""id="form" method="post">
-                              <div class="mb-3">
-                                <label for="nick" class="form-label">Buscar:</label>
-                                <input type="text"
-                                  class="form-control" name="buscar" id="buscar" aria-describedby="helpId" placeholder="Filtrar...">
-                               </div>
-                                <!-- <div class="mb-3">
+                            <form action="" method="post">
+                                <div class="mb-3">
                                   <label for="id" class="form-label">ID</label>
                                   <input
                                     type="id"
@@ -136,7 +131,7 @@
                                     aria-describedby="helpId"
                                     placeholder="id"
                                   />
-                                </div> -->
+                                </div>
                                 <div class="mb-3">
                                   <label for="nick" class="form-label">nick</label>
                                   <input type="text"
@@ -154,8 +149,7 @@
                                    </div>
                                  
                                  <div class="btn-group" role="group" aria-label="">
-                                  <!-- <a id="btn_guarda_usuario">hola</a> -->
-                                  <button id="btn_guarda_usuario"type="button" class="btn btn-success">Agregar</button> 
+                                   <button id="btnAgregar"type="button" class="btn btn-success">Agregar</button>
                                    <button id="btnEditar"type="button" onclick="editar()" class="btn btn-warning"> Editar</button>
                                    <button id="btnCancelar"type="button" class="btn btn-primary">Cancelar</button>
                                  </div>
@@ -163,7 +157,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-8">
+                      <div class="col-7">
                         <table class="table table-bordered">
                           <thead>
                             <tr>
@@ -171,7 +165,6 @@
                               <th>nick</th>
                               <th>Nombre</th>
                               <th>correo</th>
-                              <td>Seleccionar | Borrar </td>
                             </tr>
                           </thead>
                           <tbody id="usuarios"></tbody>
@@ -182,16 +175,7 @@
             </div>
         </dvi>
     </section>
-<script>
-  function seleccionar(id){
-        $.getJSON("index.php?consultar="+id,function (registros) {
-          console.log(registros);
-        $('#nick').val(registros[0]['nick']);  
-        $('#nombre').val(registros[0]['nombre']);  
-        $('#correo').val(registros[0]['correo']);  
-        });
-      }
-</script>
+
     <script src="ext/bootstrap/js/bootstrap.min.js"></script>
     <script src="ext/aos.js"></script>
     <script src="js/index.js"></script>
