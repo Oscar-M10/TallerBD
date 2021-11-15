@@ -9,7 +9,7 @@
     try{
 
         $r =  mysqli_query($conexion, "insert into usuario (nick, nombre, correo) 
-        values ('$nic', '$nom', '$corr')" ) or die(mysqli_error($conexion)); ///OJO////
+        values ('$nic', '$nom', '$corr')");// or die(mysqli_error($conexion)); ///OJO////
     }catch(Exception $e){  }
     header('Content-Type: application/json');
     echo json_encode($r);
