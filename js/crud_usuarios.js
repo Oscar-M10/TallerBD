@@ -126,6 +126,10 @@ $(document).ready(function(){
         
         });
     });
+
+    $(document).on('click','#btnEditar',function(){
+        editar();
+    }); 
     function editar() {
         var datos = new FormData();
         datos.append("nick", $("#nick").val());

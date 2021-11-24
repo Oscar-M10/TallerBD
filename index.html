@@ -15,15 +15,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-       <!--datables CSS básico-->
-       <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
-       <!--datables estilo bootstrap 5 CSS-->  
-       <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.11.3/css/dataTables.bootstrap5.min.css">
-       <!--font awesome con CDN-->  
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
-         
-
 </head>
 <body>
     <header>
@@ -55,13 +46,14 @@
     <section>
         <div class="ewk_cont_banner">
             <div class="ewk_sombra">
-                <h1>EWebik</h1>
-                <p>Diseños elegantes y contemporaneos</p>
+                <h1>Rick y Morty</h1>
+                <p>Aprende y diviértete haciéndolo...</p>
                 <hr />
                 <div class="ewk_cont_banner_link">
                     <a class="ewk_banner_link" href="vistas/v_usuarios.html">Usuarios</a>
                     <a class="ewk_banner_link_1" href="vistas/v_opiniones.html">Opiniones</a>
-                    <a class="ewk_banner_link_2" href="">Cotización</a>
+                    <a class="ewk_banner_link" href="#">Navegación</a>
+                    <a class="ewk_banner_link_1" href="vistas/scrooll.html">Scrooll</a>
                 </div>
             </div>
         </div>
@@ -71,122 +63,101 @@
         <dvi class="container">
             <div class="row ewk_cont_sec_1">
                 <div class="col-md-9">
-                    <h2><b>EWebik</b></h2>
-                    <p><i>La mejor opción para aprender diseño web</i></p>
+                    <h2><b>¡Registrate ahora!</b></h2>
+                    <p><i>La mejor forma de crecer es con tu opinion.</i></p>
                     <hr />
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Danos tu opinion, registrate y se parte de este mundo y puedas 
+                        opinas sobre los capitulos de rick y morty. 
+                    </p>
                 </div>
                 <div class="ewk_cont_sec_1_link col-md-3 text-center">
-                    <a data-aos="fade-up" href="#" class="btn btn-secondary btn-md">Visita nuestra página</a>
+                    <a data-aos="fade-up" href="vistas/v_usuarios.html" class="btn btn-secondary btn-md">¡Registrate es Gratis!</a>
                 </div>
+            </div>
+        </dvi>
+    </section>
+    <section>
+        <dvi class="container">
+            <div class="row ewk_cont_sec_1">
+                <div class="col-md-7">
+                    <h2><b>¿Qué es un API?</b></h2>
+                    <p><i>RegHat dice lo sigueinte:</i></p>
+                    <p><b>API significa interfaz de programación de aplicaciones.</b>
+                        Las API permiten que sus productos y servicios se comuniquen con otros, sin necesidad de saber cómo están implementados. Esto simplifica el desarrollo de las aplicaciones y permite ahorrar tiempo y dinero.</p>
+                    </div>
+                    <div>
+                        <h2>Ejemplo de Apis</h2>
+                        <ol>
+                            <li><p><b>Google Maps</b> a través de su acceso a “API” nos permite ponerle datos e información útil sobre sus mapas, y presentarlos con ciertas búsquedas o funciones personalizadas, desde nuestra propia aplicación.
+                            </p></li>
+                            <li><p><b>Twitter</b> ha permitido el desarrollo de un gran número de sistemas alternativos y servicios web que operan a través de su API.</p></li>
+                            <li><p><b>Facebook Connect</b> cede a través del API ciertos datos para registrar automáticamente usuarios en otros sitios web, dándoles la posibilidad de registrarse y loguearse con sus propias cuentas de Facebook.</p></li>
+                            <li><p><b>Paypal</b> con su “API” nos permite hacer operaciones de pagos electrónicos usando nuestro propio sistema web, sin necesidad de acceder/operar en la web de Paypal</p></li>
+                            <li><p>Por ejemplo en algunos foros se nos permiten interactuar usando nuestras credenciales de Facebook – en este caso el desarrollador del foro estudió la API de dicha red social, e implementó esos protocolos para que la identidad del usuario pueda ser utilizada también en dicho foro.</p></li>
+                            <li><p>Sin embargo, es importante tener en cuenta que si Facebook falla (“se cae”), esta API tampoco funcionará, inhabilitando el login a través de ésta.</p></li>
+                            <li><p>Entonces ¿Qué es una API? es una interfaz para dar un acceso limitado a la base de datos de un servicio web, evitando que se conozca o acceda al propio código fuente de la aplicación original.</p></li>
+                        </ol>
+                    </div>
+                
             </div>
         </dvi>
     </section>
 
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row ewk_cont_sec_1">
                 <div class="col-md-6">
-                    <h2>Presentación</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus deserunt, nobis quae eos
-                        provident quidem. Quaerat expedita dignissimos perferendis, nihil quo distinctio eius
-                        architecto reprehenderit maiores.</p>
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                    <a href=""><i class="icon-twitter"></i></a>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCGLKAojrhnU3Xtoj6azpUsg"><i class="icon-youtube-play"></i></a>
-                    <a href=""><i class="icon-facebook-squared"></i></a>
+                    <h2>Video ilustrativo - presentación de la api de rick y morty</h2>
+                    <p>Presentación de una serie de videos, donde se pretende explicar como es que se consume 
+                        la api de rick y morty para jalar las imagenes que contiene.</p>
+                    
+                    <a target="_blank" href="https://www.youtube.com/watch?v=E9Qn5MS_vJU"><i class="icon-youtube-play"></i></a>
+                   
                 </div>
 				
                 <div class="col-md-6">
-                    <iframe data-aos="fade-down" width="100%" height="315" src="https://www.youtube.com/embed/JEGzNzkpzIU" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E9Qn5MS_vJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-
     <section>
         <div class="ewk_cont_banner_sec_3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <h2>Título de la seccion</h2>
-                        <p>Similique excepturi voluptates placeat ducimus delectus magnam tempore dolore dolorem
-                            quisquam porro modi voluptatum eum saepe dolorum ratione officia sint eos minus</p>
-                        <a class="btn btn-secondary btn-md" href="https://ewebik.com.mx/">Portafolio</a>
+                        <h2>Carpeta del proyecto</h2>
+                        <p>El proyecto lo pueden optener por medio de un repositorio de github, haciendo clic en el botón.</p>
+                        <a class="btn btn-secondary btn-md" href="https://github.com/Oscar-M10/TallerBD" target="_blank">Portafolio</a>
                     </div>
                     <div class="col-md-8 ewk_cont_img text-center">
-                        <img data-aos="fade-right" src="img/arq5_1.jpg" class="img-fluid" alt="diseño arquitectonico">
+                        <img data-aos="fade-right" src="img/GitHub-Mark-120px-plus.png" class="img-fluid" alt="diseño arquitectonico">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <hr />
-                    <h2>Servicios</h2>
-                    <p>Todo lo encuentras en EWebik</p>
-                    <hr />
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <a href="index.html">
-                        <img data-aos="fade-left" src="img/arq5_1.jpg" class="img-fluid" alt="diseño arquitectonico">
-                        <h3>Diseño Web</h3>
-                        <p>React JS / Node JS</p>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <img data-aos="fade-up-right" src="img/arq5_1.jpg" class="img-fluid" alt="diseño arquitectonico">
-                    <h3>Aplicaciones Móviles</h3>
-                    <p>Xamarin / Android</p>
-                </div>
-                <div class="col-md-4">
-                    <img data-aos="fade-up-left" src="img/arq5_1.jpg" class="img-fluid" alt="diseño arquitectonico">
-                    <h3>Posicionamiento Web</h3>
-                    <p>SEO / Optimización de código</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="ewk_cont_footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h2>EWebik</h2>
-                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        <h2>Rick y Morty</h2>
+                        <p>Es necesario aprender lo que necesitamos y no únicamente lo que queremos.<i>Paulo coelho</i></p>
                     </div>
                     <div class="col-md-3">
                         <h2>Categorías</h2>
-                        <a href="#">Inicio</a>
-                        <a href="#">Conocenos</a>
-                        <a href="#">Proyectos</a>
-                        <a href="#">Escribenos</a>
+                        <a href="vistas/v_usuarios.html">Usuarios</a>
+                        <a href="vistas/v_opiniones.html">Opiniones</a>
+                        <a href="vistas/scrooll.html">Scrooll</a>
                     </div>
                     <div class="col-md-3">
                         <h2>Recomendado</h2>
-                        <a href="#">
-                            <p>Aprende Diseño web en el 2019, te aseguro no te arrepnteras</p>
-                            <p>Enero 2019</p>
-                        </a>
-                        <hr />
-                        <a href="#">
-                            <p>Visita mi sitio web y siguenos en redes sociales y sobre todo da like a este video</p>
-                            <p>Enero 2019</p>
+                        <a href="https://github.com/Oscar-M10" target="_blank">
+                            <p>Aprende usar github y colaboremos juntos en un proyecto</p>
                         </a>
                     </div>
-                    <div class="col-md-3 ewk_cont_img_footer">
-                        <img data-aos="fade-down-right" src="img/arq5_1.jpg" class="img-fluid" alt="diseño arquitectonico">
-                        <h3>EWebik</h3>
-                        <p>Electrónica y Diseño Web</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -197,8 +168,6 @@
     <script src="ext/bootstrap/js/bootstrap.min.js"></script>
     <script src="ext/aos.js"> </script>
     <script src="js/index.js"></script>
-
-    
 </body>
 
 </html>
